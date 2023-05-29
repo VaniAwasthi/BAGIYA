@@ -1,6 +1,9 @@
 import React from 'react'
 import { useForm } from "react-hook-form";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faUser ,faLockOpen , faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './login.css'
+
 
 function Login() {
     
@@ -24,16 +27,19 @@ function Login() {
       };
 
   return (
-    <div>
-        <p className="title">Registration Form</p>
-        <form className="App" onSubmit={handleSubmit(onSubmit)}>
-            <input type="text" {...register("name")} />
-            <input type="email" {...register("email", { required: true })} />
+    <div className='wrapper'>
+        <div className='box'>
+        <form className="myform" onSubmit={handleSubmit(onSubmit)}>
+            <p className="title">Registration Form</p>
+             <FontAwesomeIcon  icon="fauser"/><input type="text" {...register("name")} />
+             <FontAwesomeIcon  icon="faEnvelope"/><input type="email" {...register("email", { required: true })} />
             {errors.email && <span style={{ color: "red" }}>
             *Email* is mandatory </span>}
-            <input type="password" {...register("password")} />
-            <input type={"submit"} style={{ backgroundColor: "#a1eafb" }} />
+            <FontAwesomeIcon  icon="faLockOpen"/><input type="password" {...register("password")} />
         </form>
+        <button type="submit" style={{ backgroundColor: "#a1eafb" }}> Submit </button> 
+        </div>
+        
     </div>
   )
 }
