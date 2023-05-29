@@ -2,11 +2,10 @@ import React from 'react'
 import { useForm } from "react-hook-form";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faUser ,faLockOpen , faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import './login.css'
+import './SignIn.css'
 
 
-function Login() {
-    
+function SignIn() {
     const {
         register,
         handleSubmit,
@@ -30,17 +29,18 @@ function Login() {
     <div className='wrapper'>
         <div className='box'>
         <form className="myform" onSubmit={handleSubmit(onSubmit)}>
-            <p className="title">Registration Form</p>
+            <h1 className="title">Registration Form</h1>
              <FontAwesomeIcon  icon="fauser"/><input type="text" {...register("name")} />
              <FontAwesomeIcon  icon="faEnvelope"/><input type="email" {...register("email", { required: true })} />
             {errors.email && <span style={{ color: "red" }}>
             *Email* is mandatory </span>}
             <FontAwesomeIcon  icon="faLockOpen"/><input type="password" {...register("password")} />
+            <input type={"submit"} id='btn' />
         </form>
-        <button type="submit" style={{ backgroundColor: "#a1eafb" }}> Submit </button> 
+        <p class="account">already have account ?<br/><a>Login</a></p>
         </div>
         
     </div>
   )
 }
-export default Login
+export default SignIn
