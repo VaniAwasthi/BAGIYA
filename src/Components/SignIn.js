@@ -1,7 +1,6 @@
 import React from 'react'
 import { useForm } from "react-hook-form";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faUser ,faLockOpen , faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FaUser , FaEnvelope , FaLockOpen } from "react-icons/fa"
 import './SignIn.css'
 
 
@@ -30,11 +29,11 @@ function SignIn() {
         <div className='box'>
         <form className="myform" onSubmit={handleSubmit(onSubmit)}>
             <h1 className="title">Registration Form</h1>
-             <FontAwesomeIcon  icon="fauser"/><input type="text" {...register("name")} />
-             <FontAwesomeIcon  icon="faEnvelope"/><input type="email" {...register("email", { required: true })} />
+            <div className='Input'><FaUser className='icons'/><input type="text" {...register("name")} /></div>
+             <div className='Input'><FaEnvelope className='icons'/><input type="email" {...register("email", { required: true })} /></div>
             {errors.email && <span style={{ color: "red" }}>
             *Email* is mandatory </span>}
-            <FontAwesomeIcon  icon="faLockOpen"/><input type="password" {...register("password")} />
+            <div className='Input'><FaLockOpen className='icons'/><input type="password" {...register("password")} /></div>
             <input type={"submit"} id='btn' />
         </form>
         <p class="account">already have account ?<br/><a>Login</a></p>

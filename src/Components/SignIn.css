@@ -24,10 +24,19 @@ body{
     color:white ;
     font-size: 28px;
 }
+.Input{
+    display: flex;
+}
+.icons{
+    position: relative;
+    left:50px;
+    top:40px;
+    color:white;
+}
 .box input[type="text"],
 .box input[type="email"] ,
 .box input[type="password"]{
-    font-size: 20px;
+    font-size: 15px;
     background: none;
     display:block;
     margin: 20px auto;
