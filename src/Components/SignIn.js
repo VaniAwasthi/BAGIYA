@@ -28,7 +28,8 @@ function SignIn() {
     <div className='wrapper'>
         <div className='box'>
         <form className="myform" onSubmit={handleSubmit(onSubmit)}>
-            <h1 className="title">Registration Form</h1>
+            <h1 className="title">Welcome !</h1>
+            <h3 style={{color:"white" }}>Please create your account befor going ahead</h3>
             <div className='Input'><FaUser className='icons'/><input type="text" {...register("name")} /></div>
              <div className='Input'><FaEnvelope className='icons'/><input type="email" {...register("email", { required: true })} /></div>
             {errors.email && <span style={{ color: "red" }}>
