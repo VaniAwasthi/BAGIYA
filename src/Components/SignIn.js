@@ -2,17 +2,21 @@ import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
 import { FaUser , FaEnvelope , FaLockOpen } from "react-icons/fa"
 import './SignIn.css'
+import { useNavigate } from 'react-router-dom';
 
 
 function SignIn() {
   // using form hook 
-  const {register,handleSubmit,formState: { errors },} = useForm();
-      
-      const onSubmit = (data) => {
+  const {register,handleSubmit,formState: { errors },} = useForm();   
+  const onSubmit = (data) => {
           console.log(data);
-      };
-      console.log(errors)
-
+  };
+  console.log(errors);
+  const nevigate= useNavigate();
+    const handleClick=()=>{
+     nevigate("/Pages/Home")
+    }
+    
   return (
     <div className='wrapper'>
         <div className='box'>
@@ -38,9 +42,9 @@ function SignIn() {
                 message: "Password should be at-least 6 characters."}})}/>
             </div>
             {errors.password && (<p className="errorMsg">{errors.password.message}</p>)}
-             <button type={"submit"} id='btn' >SignIn</button>
+             <button type={"submit"} id='btn' onClick={handleClick} > SignIn</button>
         </form>
-        <p class="account">already have account ?<br/><a>Login</a></p>
+        <p class="account">already have account ?<br/><a onClick={()=>{nevigate('/Login')}}>Login</a></p>
         </div>
         
     </div>
