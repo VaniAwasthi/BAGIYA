@@ -33,6 +33,9 @@ body{
     top:40px;
     color:white;
 }
+.errorMsg{
+    color: red
+}
 .box input[type="text"],
 .box input[type="email"] ,
 .box input[type="password"]{
