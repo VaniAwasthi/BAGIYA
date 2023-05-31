@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
  function Login() {
   // using form hook 
-  const {register,handleSubmit,formState: { errors , isValid , isDirty},} = useForm();   
+  const {register,handleSubmit,formState: { errors , isValid },} = useForm();   
   const onSubmit = (data) => {
           console.log(data);
   };

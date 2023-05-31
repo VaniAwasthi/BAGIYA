@@ -8,7 +8,7 @@
     margin:auto;
 }
 .wrapper{
-    background:linear-gradient(rgba(0 ,0 ,0, 0.5) , rgba(0 ,0 ,0, 0.4)), url(../Image/bckgrnd.jpg);
+    background:linear-gradient(rgba(0 ,0 ,0, 0.5) , rgba(0 ,0 ,0, 0.4)), url(./Image/bckgrnd.jpg);
     font-family: "montserrat",sans-serif ;
     background-size: cover;
     background-position: center;

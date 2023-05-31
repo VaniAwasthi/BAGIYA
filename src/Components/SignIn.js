@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useForm } from "react-hook-form";
-import { FaUser , FaEnvelope , FaLockOpen , FaLock } from "react-icons/fa"
+import { FaUser , FaEnvelope , FaLockOpen  } from "react-icons/fa"
 import './SignIn.css'
 import { useNavigate } from 'react-router-dom';
 
 
 function SignIn() {
   // using form hook 
-  const {register,handleSubmit,formState: { errors , isDirty, isValid},} = useForm();   
+  const {register,handleSubmit,formState: { errors , isValid},} = useForm();   
   const onSubmit = (data) => {
           console.log(data);
   };
