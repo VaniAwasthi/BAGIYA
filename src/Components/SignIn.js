@@ -14,8 +14,9 @@ function SignIn() {
   console.log(errors);
   const nevigate= useNavigate();
   const handleClick=()=>{
-     nevigate("/Pages/Home")
-    }
+    if(isValid){
+      nevigate("/Pages/Home")
+    }}
   return (
     <div className='wrapper'>
         <div className='box'>
@@ -26,7 +27,7 @@ function SignIn() {
               <FaUser className='icons'/>
               <input type="text" name='name' placeholder='Name' {...register("name" , {required: "Name is required"})}/>
             </div>
-              {errors.email && <p className="errorMsg">{errors.email.message}</p>}
+              {errors.name && <p className="errorMsg">{errors.name.message}</p>}
             <div className='Input'>
               <FaEnvelope className='icons'/>
               <input type="text" name="email" placeholder='Email'{...register("email", {required: "Email is required.",
@@ -41,7 +42,7 @@ function SignIn() {
                 message: "Password should be at-least 6 characters."}})}/>
             </div>
             {errors.password && (<p className="errorMsg">{errors.password.message}</p>)}
-             <button type={"submit"} id='btn' disabled={isDirty || isValid} onClick={handleClick} > SignIn</button>
+             <button type={"submit"} id='btn' onClick={handleClick} > SignIn</button>
         </form>
         <p class="account">already have account ?<br/><a onClick={()=>{nevigate('/Login')}}>Login</a></p>
         </div>

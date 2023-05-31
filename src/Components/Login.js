@@ -13,7 +13,7 @@ import { useNavigate } from 'react-router-dom';
   console.log(errors);
   const nevigate= useNavigate();
     const handleClick=()=>{
-      if(isValid || isDirty){
+      if(isValid){
         nevigate("/Pages/Home")
       }
      
