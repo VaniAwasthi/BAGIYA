@@ -1,22 +1,21 @@
 import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
-import { FaUser , FaEnvelope , FaLockOpen } from "react-icons/fa"
+import { FaUser , FaEnvelope , FaLockOpen , FaLock } from "react-icons/fa"
 import './SignIn.css'
 import { useNavigate } from 'react-router-dom';
 
 
 function SignIn() {
   // using form hook 
-  const {register,handleSubmit,formState: { errors },} = useForm();   
+  const {register,handleSubmit,formState: { errors , isDirty, isValid},} = useForm();   
   const onSubmit = (data) => {
           console.log(data);
   };
   console.log(errors);
   const nevigate= useNavigate();
-    const handleClick=()=>{
+  const handleClick=()=>{
      nevigate("/Pages/Home")
     }
-    
   return (
     <div className='wrapper'>
         <div className='box'>
@@ -42,7 +41,12 @@ function SignIn() {
                 message: "Password should be at-least 6 characters."}})}/>
             </div>
             {errors.password && (<p className="errorMsg">{errors.password.message}</p>)}
-             <button type={"submit"} id='btn' onClick={handleClick} > SignIn</button>
+            <div className='Input'>
+              <FaLock className='icons'/>
+              <input type="password" name="password" placeholder='Confirm-Password' {...register("password", {required: "Password is not matching",minLength: {value: 6,}})}/>
+            </div>
+            {errors.password && (<p className="errorMsg"></p>)}
+             <button type={"submit"} id='btn' disabled={!isDirty || !isValid} onClick={handleClick} > SignIn</button>
         </form>
         <p class="account">already have account ?<br/><a onClick={()=>{nevigate('/Login')}}>Login</a></p>
         </div>
