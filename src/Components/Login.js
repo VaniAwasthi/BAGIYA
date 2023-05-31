@@ -6,14 +6,17 @@ import { useNavigate } from 'react-router-dom';
 
  function Login() {
   // using form hook 
-  const {register,handleSubmit,formState: { errors },} = useForm();   
+  const {register,handleSubmit,formState: { errors , isValid , isDirty},} = useForm();   
   const onSubmit = (data) => {
           console.log(data);
   };
   console.log(errors);
   const nevigate= useNavigate();
     const handleClick=()=>{
-     nevigate("/Pages/Home")
+      if(isValid || isDirty){
+        nevigate("/Pages/Home")
+      }
+     
     }
   return (
     <div className='wrapper'>
@@ -35,7 +38,7 @@ import { useNavigate } from 'react-router-dom';
                 message: "Password should be at-least 6 characters."}})}/>
             </div>
             {errors.password && (<p className="errorMsg">{errors.password.message}</p>)}
-             <button type={"submit"} id='btn'>LogIn</button>
+             <button type={"submit"} id='btn' onClick={handleClick} >LogIn</button>
         </form>
         <p class="account">Don't have account ?<br/><a onClick={()=>{nevigate('/')}}>SignIn</a></p>
         </div>

@@ -19,7 +19,7 @@ function SignIn() {
   return (
     <div className='wrapper'>
         <div className='box'>
-        <form className="myform" onSubmit={handleSubmit(onSubmit)}>
+        <form className="myform" onSubmit={handleSubmit(onSubmit )}>
             <h1 className="title">Welcome !</h1>
             <h3 style={{color:"white" }}>Please create your account befor going ahead</h3>
             <div className='Input'>
@@ -41,12 +41,7 @@ function SignIn() {
                 message: "Password should be at-least 6 characters."}})}/>
             </div>
             {errors.password && (<p className="errorMsg">{errors.password.message}</p>)}
-            <div className='Input'>
-              <FaLock className='icons'/>
-              <input type="password" name="password" placeholder='Confirm-Password' {...register("password", {required: "Password is not matching",minLength: {value: 6,}})}/>
-            </div>
-            {errors.password && (<p className="errorMsg"></p>)}
-             <button type={"submit"} id='btn' disabled={!isDirty || !isValid} onClick={handleClick} > SignIn</button>
+             <button type={"submit"} id='btn' disabled={isDirty || isValid} onClick={handleClick} > SignIn</button>
         </form>
         <p class="account">already have account ?<br/><a onClick={()=>{nevigate('/Login')}}>Login</a></p>
         </div>
