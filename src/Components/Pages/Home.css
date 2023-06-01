@@ -1,11 +1,41 @@
 .containerSlide {
     width: 100%;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 0;
 }
 
 .containerSlide img {
     height: 500px;
     width:100%
-
+}
+.container-Second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.react-slideshow-container+ul.indicators{
+    margin-top:-3%
+}
+.container-Second{
+    background-color:#fff6f4;
+    margin-top: 0;
+}
+.ContentSection h4{
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 4%;
+}
+.viewAllBtn{
+ width: 200px;
+ height:50px;
+ background-color: #179355;
+ color:white;
+ border: 2px solid  #179355;
+ font-size: 18px;
+ border-radius: 5%;
+}
+.viewAllBtn:hover{
+    background-color: white;
+    color:#179355;
+    border: 2px solid #179355
 }

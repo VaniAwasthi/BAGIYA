@@ -35,6 +35,15 @@ function Home() {
             </div>
         </div>
     </Slide>
+    <div className="container-Second">
+        <div className='ContentSection'>
+            <h4>Our very new shades of green.<br/>
+                Check out our latest sales and offers.</h4>
+        </div>
+        <div>
+            <button className='viewAllBtn'>View All Offers</button>
+        </div>
+    </div>
 </div>
 )
 }
