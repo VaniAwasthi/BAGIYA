@@ -58,3 +58,11 @@ h2{
     font-size: 40px;
     font-weight: 200;
 }
+.fourthsec{
+    margin: auto;
+    padding-top: 3%;
+}
+.fourthsec img{
+    width: 300px;
+    height: 300px;
+}

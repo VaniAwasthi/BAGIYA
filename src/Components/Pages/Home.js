@@ -82,16 +82,16 @@ function Home() {
     </div>
     <h2>What are you looking for ?</h2>
     <div className='Container-Third'>
-        <div>
+        <div className="fourthsec">
             <img src={PlantCare}/>
         </div>
-        <div>
+        <div className="fourthsec">
             <img src={PlantSinfourth}/>
         </div>
-        <div>
+        <div className="fourthsec">
             <img src={potsFourth}/>
         </div>
-        <div>
+        <div className="fourthsec">
             <img src={SeedsFourth}/>
         </div>
     </div>
