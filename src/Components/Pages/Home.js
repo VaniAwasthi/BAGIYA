@@ -14,7 +14,8 @@ import Thirdsec6 from "../Image/Thirdsec6.jpg";
 import PlantCare from "../Image/PlantCare.jpg";
 import PlantSinfourth from "../Image/Plantsinfourth.jpg";
 import potsFourth from "../Image/potsFourth.jpeg";
-import SeedsFourth from "../Image/SeedsFourth.jpeg"
+import SeedsFourth from "../Image/SeedsFourth.jpeg";
+import newArrival from "../Image/newArrival.png"
 
 
 
@@ -54,7 +55,7 @@ function Home() {
             <button className='viewAllBtn'>View All Offers</button>
         </div>
     </div>
-    <div className='Container-Third'>
+    <div className='ImageContainer'>
         <div className='ImageSection'>
             <img src={Thirdsec5}/>
             <p>Best Seller</p>
@@ -81,7 +82,7 @@ function Home() {
         </div>
     </div>
     <h2>What are you looking for ?</h2>
-    <div className='Container-Third'>
+    <div className='ImageContainer'>
         <div className="fourthsec">
             <img src={PlantSinfourth}/>
             <p>Plants</p>
@@ -98,6 +99,14 @@ function Home() {
             <img src={PlantCare}/>
             <p>Plants Care</p>
         </div>
+    </div>
+    <div className='contentewithicon'>
+        <img src={newArrival}/>
+        <h3>New Arrival</h3>
+        
+    </div>
+    <div className='ImageContainer'>
+
     </div>
 </div>
 )
