@@ -54,6 +54,7 @@ padding:5%;
     height: 150px;
     border-radius: 50%;
 }
+
 h2{
     font-size: 40px;
     font-weight: 200;
@@ -65,4 +66,11 @@ h2{
 .fourthsec img{
     width: 300px;
     height: 300px;
+}
+.fourthsec img:hover{
+    transform: scale(1.2);
+}
+.fourthsec p, .ImageSection p{
+    font-size: 25px;
+    font-weight:400;
 }

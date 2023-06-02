@@ -2,19 +2,20 @@ import React from 'react';
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { FaUser , FaShoppingCart } from "react-icons/fa"
 import "./Nav.css"
+import logo from "../Components/Image/logo.png"
 
 
 const Navbar= () =>{
   return (
     <nav className="nav">
       <Link to="/Pages/Home" className="site-title">
-        Crazy For Cactus
+        <img src={logo}/>BAGIYA
       </Link>
   <ul>
-  <CustomLink to="/Pages/Home">Home</CustomLink>
-  <CustomLink to="/Pages/AboutUs">AboutUs</CustomLink>
-  <CustomLink to="/Pages/Products">Products</CustomLink>
-  <CustomLink to="/Pages/Contact">ContactUs</CustomLink>
+  <CustomLink to="/Pages/Home">HOME</CustomLink>
+  <CustomLink to="/Pages/AboutUs">ABOUTuS</CustomLink>
+  <CustomLink to="/Pages/Products">PRODUCTS</CustomLink>
+  <CustomLink to="/Pages/Contact">CONTACTUS</CustomLink>
   </ul>
   <ul>
  <CustomLink to="/Pages/Cart"><FaShoppingCart/></CustomLink>

@@ -69,7 +69,7 @@ function Home() {
         </div>
         <div className='ImageSection'>
             <img src={Thirdsec4}/>
-            <p>OutDoor Plant</p>
+            <p>Outdoor Plant</p>
         </div>
         <div className='ImageSection'>
             <img src={Thirdsec1}/>
@@ -83,16 +83,20 @@ function Home() {
     <h2>What are you looking for ?</h2>
     <div className='Container-Third'>
         <div className="fourthsec">
-            <img src={PlantCare}/>
-        </div>
-        <div className="fourthsec">
             <img src={PlantSinfourth}/>
-        </div>
-        <div className="fourthsec">
-            <img src={potsFourth}/>
+            <p>Plants</p>
         </div>
         <div className="fourthsec">
             <img src={SeedsFourth}/>
+            <p>Seeds</p>
+        </div>
+        <div className="fourthsec">
+            <img src={potsFourth}/>
+            <p>Pots & Planter</p>
+        </div>
+        <div className="fourthsec">
+            <img src={PlantCare}/>
+            <p>Plants Care</p>
         </div>
     </div>
 </div>
