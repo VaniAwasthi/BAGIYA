@@ -11,6 +11,10 @@ import Thirdsec3 from "../Image/Thirdsec3.jpg";
 import Thirdsec4 from "../Image/Thirdsec4.jpeg";
 import Thirdsec5 from "../Image/Thirdsec5.jpg";
 import Thirdsec6 from "../Image/Thirdsec6.jpg";
+import PlantCare from "../Image/PlantCare.jpg";
+import PlantSinfourth from "../Image/Plantsinfourth.jpg";
+import potsFourth from "../Image/potsFourth.jpeg";
+import SeedsFourth from "../Image/SeedsFourth.jpeg"
 
 
 
@@ -77,8 +81,19 @@ function Home() {
         </div>
     </div>
     <h2>What are you looking for ?</h2>
-    <div className='Container-Fourth'>
-
+    <div className='Container-Third'>
+        <div>
+            <img src={PlantCare}/>
+        </div>
+        <div>
+            <img src={PlantSinfourth}/>
+        </div>
+        <div>
+            <img src={potsFourth}/>
+        </div>
+        <div>
+            <img src={SeedsFourth}/>
+        </div>
     </div>
 </div>
 )
