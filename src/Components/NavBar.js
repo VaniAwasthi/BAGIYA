@@ -7,7 +7,7 @@ import "./Nav.css"
 const Navbar= () =>{
   return (
     <nav className="nav">
-      <Link to="/Page/Home" className="site-title">
+      <Link to="/Pages/Home" className="site-title">
         Crazy For Cactus
       </Link>
   <ul>

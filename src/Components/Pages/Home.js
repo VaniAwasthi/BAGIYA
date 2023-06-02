@@ -75,6 +75,9 @@ function Home() {
             <img src={Thirdsec3}/>
             <p>Seeds</p>
         </div>
+    </div>
+    <h2>What are you looking for ?</h2>
+    <div className='Container-Fourth'>
 
     </div>
 </div>
