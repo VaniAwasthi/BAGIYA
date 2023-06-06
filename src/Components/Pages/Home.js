@@ -117,24 +117,27 @@ const Home = () => {
         <div className="ImageContainer">
           <div className="fifthsec">
             <img className="jade" src={newarrival1} />
-
             <h3>Jade Plant</h3>
-            <h5>From Rs.199</h5>
+            <p>From Rs.199</p>
+            <button>Buy Now</button>
           </div>
           <div className="fifthsec">
             <img className="pinkRose" src={newarrival2} />
             <h3>Pink Rose Plant</h3>
-            <h5>From Rs.199</h5>
+            <p>From Rs.199</p>
+            <button>Buy Now</button>
           </div>
           <div className="fifthsec">
             <img className="snake" src={newarrival3} />
             <h3>Snake Plant</h3>
-            <h5>From Rs.199</h5>
+            <p>From Rs.199</p>
+            <button>Buy Now</button>
           </div>
           <div className="fifthsec">
             <img className="cactus" src={newarrival4} />
             <h3>Cactus Plant</h3>
-            <h5>From Rs.199</h5>
+            <p>From Rs.199</p>
+            <button>Buy Now</button>
           </div>
         </div>
         <div className="sixsec">

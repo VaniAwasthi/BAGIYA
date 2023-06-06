@@ -64,8 +64,8 @@ h2{
     padding-top: 3%;
 }
 .fourthsec img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
 }
 .fifthsec{
     margin: auto;
@@ -75,9 +75,8 @@ h2{
     width: 250px;
     height:350px ;
 }
-.fifthsec h5{
-    font-size: 25px;
-    font-weight: 300;
+.fifthsec p{
+    font-size:25px;
     color:green;
     margin: 0;
 }
