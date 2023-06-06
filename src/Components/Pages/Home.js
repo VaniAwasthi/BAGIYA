@@ -21,10 +21,16 @@ import newarrival1 from "../Image/newarrival1.jpg";
 import newarrival2 from "../Image/newarrival2.jpeg";
 import newarrival3 from "../Image/newarrival3.jpg";
 import newarrival4 from "../Image/newarrival4.jpg";
-import { faRupeeSign } from "@fortawesome/free-solid-svg-icons";
-import { FaRupeeSign } from "react-icons/fa";
-
+import { useNavigate } from "react-router-dom";
+import BestSeller from "../Image/BestSeller.png";
+import Bestseller1 from "../Image/Bestseller1.jpg";
+import Bestseller2 from "../Image/Bestseller2.jpg";
+import Bestseller3 from "../Image/BestSeller3.jpg";
+import Bestseller4 from "../Image/Bestseller4.jpg";
+import TestimonialSlider from "./TestimonialSlider";
+import Testimonial from "../Image/Testimonial.png";
 const Home = () => {
+  const nevigate = useNavigate();
   const proprietes = {
     duration: 5000,
     transitionDuration: 500,
@@ -119,30 +125,126 @@ const Home = () => {
             <img className="jade" src={newarrival1} />
             <h3>Jade Plant</h3>
             <p>From Rs.199</p>
-            <button>Buy Now</button>
+            <button className="buyNow">
+              <a
+                onClick={() => {
+                  nevigate("/Pages/Products");
+                }}
+              >
+                Veiw Product
+              </a>
+            </button>
           </div>
           <div className="fifthsec">
             <img className="pinkRose" src={newarrival2} />
             <h3>Pink Rose Plant</h3>
             <p>From Rs.199</p>
-            <button>Buy Now</button>
+            <button className="buyNow">
+              <a
+                onClick={() => {
+                  nevigate("/Pages/Products");
+                }}
+              >
+                Veiw Product
+              </a>
+            </button>
           </div>
           <div className="fifthsec">
             <img className="snake" src={newarrival3} />
             <h3>Snake Plant</h3>
             <p>From Rs.199</p>
-            <button>Buy Now</button>
+            <button className="buyNow">
+              <a
+                onClick={() => {
+                  nevigate("/Pages/Products");
+                }}
+              >
+                Veiw Product
+              </a>
+            </button>
           </div>
           <div className="fifthsec">
             <img className="cactus" src={newarrival4} />
             <h3>Cactus Plant</h3>
             <p>From Rs.199</p>
-            <button>Buy Now</button>
+            <button className="buyNow">
+              <a
+                onClick={() => {
+                  nevigate("/Pages/Products");
+                }}
+              >
+                Veiw Product
+              </a>
+            </button>
           </div>
         </div>
-        <div className="sixsec">
-          <div></div>
+        <div className="contentewithicon">
+          <img src={BestSeller} />
+          <h3>Best Seller</h3>
         </div>
+        <div className="ImageContainer">
+          <div className="secSixth">
+            <img className="Bestseller1" src={Bestseller1} />
+            <h3>Money plant</h3>
+            <p>From Rs. 150</p>
+            <button className="buyNow">
+              <a
+                onClick={() => {
+                  nevigate("/Pages/Products");
+                }}
+              >
+                Veiw Product
+              </a>
+            </button>
+          </div>
+          <div className="secSixth">
+            <img className="Bestseller2" src={Bestseller2} />
+            <h3>Jade Mini plant</h3>
+            <p>From Rs. 250</p>
+            <button className="buyNow">
+              <a
+                onClick={() => {
+                  nevigate("/Pages/Products");
+                }}
+              >
+                Veiw Product
+              </a>
+            </button>
+          </div>
+          <div className="secSixth">
+            <img className="Bestseller3" src={Bestseller3} />
+            <h3>Broken Heart Plant</h3>
+            <p>From Rs. 250</p>
+            <button className="buyNow">
+              <a
+                onClick={() => {
+                  nevigate("/Pages/Products");
+                }}
+              >
+                Veiw Product
+              </a>
+            </button>
+          </div>
+          <div className="secSixth">
+            <img className="Bestseller4" src={Bestseller4} />
+            <h3>Bamboo plant</h3>
+            <p>From Rs. 350</p>
+            <button className="buyNow">
+              <a
+                onClick={() => {
+                  nevigate("/Pages/Products");
+                }}
+              >
+                Veiw Product
+              </a>
+            </button>
+          </div>
+        </div>
+        <div className="contentewithicon">
+          <img src={Testimonial} />
+          <h3>Happy planter </h3>
+        </div>
+        <TestimonialSlider></TestimonialSlider>
       </div>
     </>
   );
