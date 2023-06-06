@@ -17,6 +17,10 @@ import potsFourth from "../Image/potsFourth.jpeg";
 import SeedsFourth from "../Image/SeedsFourth.jpeg";
 import newArrival from "../Image/newArrival.png";
 import Navbar from "../NavBar";
+import newarrival1 from "../Image/newarrival1.jpg";
+import newarrival2 from "../Image/newarrival2.jpeg";
+import newarrival3 from "../Image/newarrival3.jpg";
+import newarrival4 from "../Image/newarrival4.jpg";
 
 const Home = () => {
   const proprietes = {
@@ -108,7 +112,24 @@ const Home = () => {
           <img src={newArrival} />
           <h3>New Arrival</h3>
         </div>
-        <div className="ImageContainer"></div>
+        <div className="ImageContainer">
+          <div className="fourthsec">
+            <img className="jade" src={newarrival1} />
+            <h3>Jade Plant</h3>
+          </div>
+          <div className="fourthsec">
+            <img className="pinkRose" src={newarrival2} />
+            <h3>Pink Rose Plant</h3>
+          </div>
+          <div className="fourthsec">
+            <img className="snake" src={newarrival3} />
+            <h3>Snake Plant</h3>
+          </div>
+          <div className="fourthsec">
+            <img className="cactus" src={newarrival4} />
+            <h3>Cactus Plant</h3>
+          </div>
+        </div>
       </div>
     </>
   );

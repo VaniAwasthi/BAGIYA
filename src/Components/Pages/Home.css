@@ -67,8 +67,17 @@ h2{
     width: 300px;
     height: 300px;
 }
-.fourthsec img:hover{
-    transform: scale(1.2);
+.jade:hover{
+    content: url("../Image//newapprival1hover.jpg");
+}
+.pinkRose:hover{
+    content: url("../Image/newarrival2hover.jpg");
+}
+.snake:hover{
+    content: url("../Image/newarrival3hover.jpg");
+}
+.cactus:hover{
+    content: url("../Image/newarrival4hover.jpg");
 }
 .fourthsec p, .ImageSection p{
     font-size: 25px;
