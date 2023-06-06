@@ -17,6 +17,7 @@ import potsFourth from "../Image/potsFourth.jpeg";
 import SeedsFourth from "../Image/SeedsFourth.jpeg";
 import newArrival from "../Image/newArrival.png";
 import Navbar from "../NavBar";
+import Footer from "../Footer";
 import newarrival1 from "../Image/newarrival1.jpg";
 import newarrival2 from "../Image/newarrival2.jpeg";
 import newarrival3 from "../Image/newarrival3.jpg";
@@ -246,6 +247,7 @@ const Home = () => {
         </div>
         <TestimonialSlider></TestimonialSlider>
       </div>
+      <Footer></Footer>
     </>
   );
 };
