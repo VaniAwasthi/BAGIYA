@@ -21,6 +21,8 @@ import newarrival1 from "../Image/newarrival1.jpg";
 import newarrival2 from "../Image/newarrival2.jpeg";
 import newarrival3 from "../Image/newarrival3.jpg";
 import newarrival4 from "../Image/newarrival4.jpg";
+import { faRupeeSign } from "@fortawesome/free-solid-svg-icons";
+import { FaRupeeSign } from "react-icons/fa";
 
 const Home = () => {
   const proprietes = {
@@ -113,22 +115,30 @@ const Home = () => {
           <h3>New Arrival</h3>
         </div>
         <div className="ImageContainer">
-          <div className="fourthsec">
+          <div className="fifthsec">
             <img className="jade" src={newarrival1} />
+
             <h3>Jade Plant</h3>
+            <h5>From Rs.199</h5>
           </div>
-          <div className="fourthsec">
+          <div className="fifthsec">
             <img className="pinkRose" src={newarrival2} />
             <h3>Pink Rose Plant</h3>
+            <h5>From Rs.199</h5>
           </div>
-          <div className="fourthsec">
+          <div className="fifthsec">
             <img className="snake" src={newarrival3} />
             <h3>Snake Plant</h3>
+            <h5>From Rs.199</h5>
           </div>
-          <div className="fourthsec">
+          <div className="fifthsec">
             <img className="cactus" src={newarrival4} />
             <h3>Cactus Plant</h3>
+            <h5>From Rs.199</h5>
           </div>
+        </div>
+        <div className="sixsec">
+          <div></div>
         </div>
       </div>
     </>
