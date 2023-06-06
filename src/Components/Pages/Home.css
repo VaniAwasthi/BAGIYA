@@ -43,6 +43,7 @@ padding:5%;
 }
 .ImageContainer{
     display: flex;
+    margin: 2% 0 
 }
 .ImageSection{
     margin: auto;
@@ -64,11 +65,33 @@ h2{
     padding-top: 3%;
 }
 .fourthsec img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 350px;
 }
-.fourthsec img:hover{
-    transform: scale(1.2);
+.fifthsec{
+    margin: auto;
+    padding-top: 3%;
+}
+.fifthsec img{
+    width: 250px;
+    height:350px ;
+}
+.fifthsec p{
+    font-size:25px;
+    color:green;
+    margin: 0;
+}
+.jade:hover{
+    content: url("../Image//newapprival1hover.jpg");
+}
+.pinkRose:hover{
+    content: url("../Image/newarrival2hover.jpg");
+}
+.snake:hover{
+    content: url("../Image/newarrival3hover.jpg");
+}
+.cactus:hover{
+    content: url("../Image/newarrival4hover.jpg");
 }
 .fourthsec p, .ImageSection p{
     font-size: 25px;
@@ -86,4 +109,46 @@ h2{
 .contentewithicon h3{
     font-size: 32px;
     font-weight: 400;
+}
+.buyNow{
+    padding:5%;
+    margin-top: 3%;
+    width: 250px;
+    height:40px;
+    background-color: #179355;
+    color:white;
+    border: 2px solid  #179355;
+    font-size: 18px;
+    border-radius: 5%; 
+}
+.buyNow:hover{
+    background-color: white;
+    color:#179355;
+    border: 2px solid #179355
+}
+/* section six */
+.secSixth{
+    margin: auto;
+    padding-top: 3%;
+}
+.secSixth img{
+    width: 250px;
+    height:350px ;
+}
+.secSixth p{
+    font-size:25px;
+    color:green;
+    margin :0
+}
+.Bestseller1:hover{
+    content: url("../Image/Bestsellerhover1.jpg");
+}
+.Bestseller2:hover{
+    content: url("../Image/Bestsellerhover2.jpg");
+}
+.Bestseller3:hover{
+    content: url("../Image/Bestsellerhover3.jpg");
+}
+.Bestseller4:hover{
+    content: url("../Image/Bestsellerhover4.jpg");
 }

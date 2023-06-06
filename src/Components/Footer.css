@@ -1,0 +1,24 @@
+
+.Container{
+    display: flex;
+    background-color: #fff6f4;
+    color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+.logo{
+    display:flex ;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    margin-top: 3%;
+}
+.site-title {
+    font-size:20px;
+    color:green;
+    text-decoration: none;
+  }

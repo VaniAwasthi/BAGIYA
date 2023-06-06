@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../NavBar";
 
-export default function Cart() {
+const Cart = () => {
   return (
-    <div>
-      <h1>Cart</h1>
-    </div>
-  )
-}
+    <>
+      <Navbar></Navbar>
+      <div>
+        <h1>Cart</h1>
+      </div>
+    </>
+  );
+};
+export default Cart;

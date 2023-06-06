@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../NavBar";
 
-export default function Products() {
+const Products = () => {
   return (
-    <div>
-      Products
-    </div>
-  )
-}
+    <>
+      <Navbar></Navbar>
+      <div>
+        <h1>Products</h1>
+      </div>
+    </>
+  );
+};
+export default Products;
