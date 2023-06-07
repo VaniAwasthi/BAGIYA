@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="ThirdSection"></div>
         <div className="fourth section"></div>
       </div>
-      {/* {`Copyright © BAGIYA  ${year}`} */}
+      {`Copyright © BAGIYA  ${year}`}
     </footer>
   );
 };
