@@ -1,24 +1,23 @@
 footer{
-    color:green
+    color:green;
+    background-color: #fff6f4;
+    
 }
 .Container{
     width: 100%;
-    display: flex;
-    background-color: #fff6f4;
-    color: green;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 2rem;
-    padding: 0 1rem;
+    padding: 40px 0px;
+    display: grid;
+    grid-gap: 2.0rem;
+    grid-template-columns: repeat(3, 0.5fr);
 }
 .fistSection{
-    width:35%;
+    width:100%;
     display: flex;
     flex-direction: column;
 }
 .logo{
-    display:flex ;
+   display: grid;
+   grid-template-columns: repeat(2, 0.1fr);
 }
 .logo img{
     width: 70px;
@@ -35,7 +34,7 @@ footer{
     margin:0 2% 0 0;
   }
   .secondsectiom{
-    width:25%;
+    width:100%;
   }
   .IconContainer{
     display: flex;
@@ -52,6 +51,11 @@ footer{
     font-size: 35px;
     color: black;
 }
+.ThirdsecIcon{
+    font-size: 30px;
+    color: black;
+    margin-top: 9%;
+}
 .Icon-Item p{
     margin-top: 2%;
     font-size: 20px;
@@ -63,3 +67,9 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
+.Icon-content p{
+    font-size: 15px;
+    color: black;
+    margin-top: 0;
+}
+

@@ -2,7 +2,15 @@ import React from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "./Footer.css";
 import logo from "./Image/logo.png";
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaHome,
+  FaMobile,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -31,24 +39,7 @@ const Footer = () => {
         </div>
         <div className="secondsectiom">
           <h3>Keep Connected</h3>
-          {/* <ul>
-            <li>
-              <FaFacebook style={{ color: "black" }} />
-              Facebook
-            </li>
-            <li>
-              <FaInstagram style={{ color: "black" }} />
-              FaInstagram
-            </li>
-            <li>
-              <FaTwitter style={{ color: "black" }} />
-              Twitter
-            </li>
-            <li>
-              <FaLinkedin style={{ color: "black" }} />
-              Linkedin
-            </li>
-          </ul> */}
+
           <div className="IconContainer">
             <div className="Icons">
               <div className="Icon-Items">
@@ -80,8 +71,56 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="ThirdSection"></div>
-        <div></div>
+        {/* <div className="ThirdSection">
+          <h3>Contact</h3>
+          <div className="Address">
+            <FaHome />
+            <div className="companyDetail">
+              <p>Bagiya</p>
+              <p>is simply dummy text of the printing and </p>
+            </div>
+          </div>
+          <div className="contact">
+            <FaMobile />
+            <p>8906737891</p>
+          </div>
+          <div className="contact">
+            <FaEnvelope />
+            <p>xyz@gmailcom</p>
+          </div>
+        </div> */}
+        <div className="secondsectiom">
+          <h3>Keep Connected</h3>
+
+          <div className="IconContainer">
+            <div className="Icons">
+              <div className="ThirdsecIcon">
+                <FaHome />
+              </div>
+              <div className="ThirdsecIcon">
+                <FaMobile />
+              </div>
+              <div className="ThirdsecIcon">
+                <FaEnvelope />
+              </div>
+            </div>
+            <div className="Icons">
+              <div className="Icon-content">
+                <p>
+                  BAGIYA
+                  <br />
+                  gurgaon 220110
+                </p>
+              </div>
+              <div className="Icon-content">
+                <p>8976542310</p>
+              </div>
+              <div className="Icon-content">
+                <p>xyz@gmailcom</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="CopyrightSection">
         <div>{`Copyright © BAGIYA  ${year}`}</div>
