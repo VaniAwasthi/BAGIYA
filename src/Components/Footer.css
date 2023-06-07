@@ -1,5 +1,8 @@
-
+footer{
+    color:green
+}
 .Container{
+    width: 100%;
     display: flex;
     background-color: #fff6f4;
     color: green;
@@ -9,16 +12,54 @@
     gap: 2rem;
     padding: 0 1rem;
 }
+.fistSection{
+    width:35%;
+    display: flex;
+    flex-direction: column;
+}
 .logo{
     display:flex ;
 }
 .logo img{
     width: 70px;
     height: 70px;
-    margin-top: 3%;
+    margin-top: 8%;
 }
 .site-title {
     font-size:20px;
+    margin: 0;
     color:green;
     text-decoration: none;
   }
+  .FooterContent{
+    margin:0 2% 0 0;
+  }
+  .secondsectiom{
+    width:25%;
+  }
+  .IconContainer{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+ .Icons{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+   
+ }
+.Icon-Items{
+    font-size: 35px;
+    color: black;
+}
+.Icon-Item p{
+    margin-top: 2%;
+    font-size: 20px;
+    color: black;
+}
+.CopyrightSection{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
