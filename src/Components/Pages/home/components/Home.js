@@ -16,7 +16,7 @@ import PlantSinfourth from "../Image/Plantsinfourth.jpg";
 import potsFourth from "../Image/potsFourth.jpeg";
 import SeedsFourth from "../Image/SeedsFourth.jpeg";
 import newArrival from "../Image/newArrival.png";
-import Navbar from "../NavBar";
+import Navbar from "../../../reusable/navbar/container";
 import Footer from "../Footer";
 import newarrival1 from "../Image/newarrival1.jpg";
 import newarrival2 from "../Image/newarrival2.jpeg";
