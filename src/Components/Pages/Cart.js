@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../NavBar";
+import Navbar from "../../reusable/navbar/container";
 
 const Cart = () => {
   return (

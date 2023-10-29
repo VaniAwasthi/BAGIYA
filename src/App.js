@@ -1,12 +1,11 @@
 import "./App.css";
-import SignIn from "./Components/SignIn";
-import Login from "./Components/Login";
+import SignIn from "./Components/auth/signup/container/SignIn";
+import Login from "./Components/auth/login/container/Login";
 import { Route, Routes } from "react-router-dom";
-import Home from "./Components/Pages/Home";
-import AboutUs from "./Components/Pages/AboutUs";
-import Contact from "./Components/Pages/Contact";
-import Products from "./Components/Pages/Products";
-import Navbar from "./Components/NavBar";
+import Home from "./Components/Pages/home/index";
+import AboutUs from "./Components/Pages/aboutUs/AboutUs";
+import Contact from "./Components/Pages/contactUs/Contact";
+import Products from "./Components/Pages/products/index";
 import Cart from "./Components/Pages/Cart";
 
 function App() {
