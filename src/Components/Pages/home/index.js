@@ -30,7 +30,7 @@ import Bestseller3 from "../../../Image/BestSeller3.jpg";
 import Bestseller4 from "../../../Image/Bestseller4.jpg";
 import TestimonialSlider from "./components/testimonial/index";
 import Testimonial from "../../../Image/Testimonial.png";
-const Home = () => {
+const HomePages = () => {
   const nevigate = useNavigate();
   const proprietes = {
     duration: 5000,
@@ -251,4 +251,4 @@ const Home = () => {
     </>
   );
 };
-export default Home;
+export default HomePages;
