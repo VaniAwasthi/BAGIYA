@@ -40,7 +40,7 @@ const Categories = () => {
       display="flex"
       justifyContent={{ xs: "center", sm: "space-evenly" }}
       flexWrap={{ xs: "wrap", lg: "nowrap" }}
-      padding={{ xs: 2, sm: 4 }}
+      padding={{ xs: 0, sm: 4 }}
     >
       {CategoriesData.map((CategoriesData, index) => (
         <Box

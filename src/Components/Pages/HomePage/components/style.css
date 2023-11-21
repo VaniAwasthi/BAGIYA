@@ -1,0 +1,9 @@
+.zoom-effect-container {
+  transition: transform 0.2s ease-in-out;
+}
+
+.zoom-effect-container:hover {
+  transform: scale(
+    1.1
+  ); /* You can adjust the scale factor for the zoom effect */
+}

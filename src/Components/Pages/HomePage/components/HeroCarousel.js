@@ -1,10 +1,6 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import MobileStepper from "@mui/material/MobileStepper";
-import Button from "@mui/material/Button";
-import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import slide2 from "../../../../Image/Slide1.png";
@@ -28,9 +24,9 @@ const images = [
   },
 ];
 
-function HeroCarousel() {
+const HeroCarousel = () => {
   const theme = useTheme();
-  const [activeStep, setActiveStep] = React.useState(0);
+  const [activeStep, setActiveStep] = useState(0);
   const maxSteps = images.length;
 
   const handleNext = () => {
@@ -41,16 +37,22 @@ function HeroCarousel() {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  const handleStepChange = (step) => {
-    setActiveStep(step);
-  };
+  useEffect(() => {
+    // Your code here that needs to run on prop changes
+    // For example, you can fetch data or perform other side effects
+
+    // Clean up the effect (if needed) by returning a function
+    return () => {
+      // Cleanup code
+    };
+  }, []);
 
   return (
     <Box sx={{ maxWidth: "100%", flexGrow: 1 }}>
       <AutoPlaySwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={activeStep}
-        onChangeIndex={handleStepChange}
+        onChangeIndex={setActiveStep}
         enableMouseEvents
       >
         {images.map((step, index) => (
@@ -59,11 +61,10 @@ function HeroCarousel() {
               <Box
                 component="img"
                 sx={{
-                  height: "500px",
+                  height: "60vh", // Adjust this value as needed
                   display: "block",
-                  maxWidth: "100%",
-                  overflow: "hidden",
                   width: "100%",
+                  objectFit: "fill",
                 }}
                 src={step.imgPath}
                 alt={step.label}
@@ -72,35 +73,9 @@ function HeroCarousel() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
-      {/* <MobileStepper
-        steps={maxSteps}
-        position="static"
-        activeStep={activeStep}
-        nextButton={
-          <Button
-            size="small"
-            onClick={handleNext}
-            disabled={activeStep === maxSteps - 1}
-          >
-            {theme.direction === "rtl" ? (
-              <KeyboardArrowLeftIcon />
-            ) : (
-              <KeyboardArrowRightIcon />
-            )}
-          </Button>
-        }
-        backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === "rtl" ? (
-              <KeyboardArrowRightIcon />
-            ) : (
-              <KeyboardArrowLeftIcon />
-            )}
-          </Button>
-        }
-      /> */}
+      {/* MobileStepper code here */}
     </Box>
   );
-}
+};
 
 export default HeroCarousel;

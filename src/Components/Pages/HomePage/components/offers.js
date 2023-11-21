@@ -3,11 +3,11 @@ import React from "react";
 
 const OfferSection = () => {
   return (
-    <Box sx={{ backgroundColor: "#fff6f4", padding: 2 }}>
+    <Box sx={{ backgroundColor: "#fff6f4" }}>
       <Grid container spacing={2} mt={2} alignItems="center">
         <Grid
           container
-          items
+          item
           xs={12}
           sm={6}
           justifyContent={{ xs: "none", sm: "right" }}
@@ -21,7 +21,7 @@ const OfferSection = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid container items xs={12} sm={6} padding={2}>
+        <Grid container item xs={12} sm={6} padding={2}>
           <Button
             variant="contained"
             sx={{
