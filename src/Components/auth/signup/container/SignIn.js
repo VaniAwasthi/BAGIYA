@@ -18,7 +18,7 @@ function SignIn() {
   const nevigate = useNavigate();
   const handleClick = () => {
     if (isValid) {
-      nevigate("/Pages/Home");
+      nevigate("/Pages/Homepage/homepage");
     }
   };
   return (
