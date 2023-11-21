@@ -7,7 +7,7 @@ import Categories from "./components/Categories";
 const Homepage = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroCarousel />
       <OfferSection />
       <Categories />
