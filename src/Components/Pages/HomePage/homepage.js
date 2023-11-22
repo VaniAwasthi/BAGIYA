@@ -5,6 +5,8 @@ import OfferSection from "./components/offers";
 import Categories from "./components/Categories";
 import FeatureSection from "./components/Features";
 import BestSeller from "./components/BestSeller";
+import ShoptheLook from "./components/ShoptheLook";
+import NewArrival from "./components/NewArivals";
 
 const Homepage = () => {
   return (
@@ -15,6 +17,8 @@ const Homepage = () => {
       <Categories />
       <FeatureSection />
       <BestSeller />
+      <ShoptheLook />
+      <NewArrival />
     </>
   );
 };
